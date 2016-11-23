@@ -30,8 +30,12 @@ public class FinalGrade implements Gradable {
         return getWeighting() * getGrade();
     }
 
-    @Override
-    public String toString() {
-        return "Your final grade is " + getWeightedGrade();
+    public void print() {
+        Arrays.stream(completedYears)
+                .forEach(System.out::println);
+        Arrays.stream(uncompletedYears)
+                .forEach(System.out::println);
+
+        System.out.println("Final grade: " + getWeightedGrade());
     }
 }

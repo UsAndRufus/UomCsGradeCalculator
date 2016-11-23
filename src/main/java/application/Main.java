@@ -10,6 +10,6 @@ public class Main {
 
         FinalGrade finalGrade = jsonParser.getFinalGrade();
 
-        System.out.println(finalGrade);
+        finalGrade.print();
     }
 }

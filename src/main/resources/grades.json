@@ -1,23 +1,41 @@
 {
   "finalGrade": {
-    "completedYears": [
-      {
-        "name": "First Year",
-        "grade": 0.75,
-        "weighting": 0.0
-      },
-      {
-        "name": "Second Year",
-        "grade": 0.67,
-        "weighting": 0.33
-      }
-    ],
-    "uncompletedYears": [
-      {
-        "name": "Third Year",
-        "weighting": 0.67
-      }
-    ]
+	"completedYears": [
+	  {
+		"name": "First Year",
+		"grade": 0.75,
+		"weighting": 0.0
+	  },
+	  {
+		"name": "Second Year",
+		"grade": 0.71,
+		"weighting": 0.33
+	  }
+	],
+	"uncompletedYears": [
+	  {
+		"name": "Third Year",
+		"weighting": 0.67,
+		"modules": [
+          {
+			"name": "Defense Against The Dark Arts",
+			"weighting": 1.0,
+			"gradedWork": [
+              {
+                "name": "Yer a wizard",
+                "weighting": 0.5,
+                "grade": 1
+              },
+              {
+                "name": "A what?",
+                "weighting": 0.5,
+                "grade": 0
+              }
+			]
+		  }
+		]
+	  }
+	]
 
   }
 }

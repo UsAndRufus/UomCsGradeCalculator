@@ -1,26 +1,23 @@
 package grades;
 
-import grades.years.FirstYear;
-import grades.years.SecondYear;
-import grades.years.ThirdYear;
+import grades.years.UncompletedYear;
+import grades.years.Year;
+
+import java.util.Arrays;
 
 public class FinalGrade implements Gradable {
 
-    private FirstYear firstYear;
-    private SecondYear secondYear;
-    private ThirdYear thirdYear;
-
-    public FinalGrade() {
-        this.firstYear = new FirstYear();
-        this.secondYear = new SecondYear();
-        this.thirdYear = new ThirdYear();
-    }
+    private Year[] completedYears;
+    private UncompletedYear[] uncompletedYears;
 
     @Override
     public double getGrade() {
-        return  firstYear.getWeightedGrade() +
-                secondYear.getWeightedGrade() +
-                thirdYear.getWeightedGrade();
+        return Arrays.stream(completedYears)
+                .mapToDouble(Year::getWeightedGrade)
+                .sum() +
+                Arrays.stream(uncompletedYears)
+                        .mapToDouble(Year::getWeightedGrade)
+                        .sum();
     }
 
     @Override

@@ -1,0 +1,23 @@
+{
+  "finalGrade": {
+    "completedYears": [
+      {
+        "name": "First Year",
+        "grade": 0.75,
+        "weighting": 0.0
+      },
+      {
+        "name": "Second Year",
+        "grade": 0.67,
+        "weighting": 0.33
+      }
+    ],
+    "uncompletedYears": [
+      {
+        "name": "Third Year",
+        "weighting": 0.67
+      }
+    ]
+
+  }
+}

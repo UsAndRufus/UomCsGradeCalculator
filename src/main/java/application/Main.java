@@ -1,11 +1,14 @@
 package application;
 
 import grades.FinalGrade;
+import json.JsonParser;
 
 public class Main {
 
     public static void main(String[] args) {
-        FinalGrade finalGrade = new FinalGrade();
+        JsonParser jsonParser = new JsonParser(args[0]);
+
+        FinalGrade finalGrade = jsonParser.getFinalGrade();
 
         System.out.println(finalGrade);
     }

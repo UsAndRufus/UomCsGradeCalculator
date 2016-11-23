@@ -1,0 +1,173 @@
+{
+  "finalGrade": {
+    "completedYears": [
+      {
+        "name": "First Year",
+        "grade": 0.0,
+        "weighting": 0.0
+      },
+      {
+        "name": "Second Year",
+        "grade": 0.0,
+        "weighting": 1.0
+      }
+    ],
+    "uncompletedYears": [
+      {
+        "name": "Third Year",
+        "weighting": 2.0,
+        "modules": [
+          {
+            "name": "COMP30040 Third Year Project",
+            "weighting": 4.0,
+            "gradedWork": [
+              {
+                "name": "Seminar",
+                "weighting": 1.0,
+                "grade": 0.0
+              },
+              {
+                "name": "Presentation of Results",
+                "weighting": 1.0,
+                "grade": 0.0
+              },
+              {
+                "name": "Final Report",
+                "weighting": 2.5,
+                "grade": 0.0
+              },
+              {
+                "name": "Screencast",
+                "weighting": 1.5,
+                "grade": 0.0
+              },
+              {
+                "name": "Achievement and Approach",
+                "weighting": 4.0,
+                "grade": 0.0
+              }
+            ]
+          },
+          {
+            "name": "COMP33511 User Experience",
+            "weighting": 1.0,
+            "gradedWork": [
+              {
+                "name": "Assignment 1",
+                "weighting": 1.0,
+                "grade": 0.0
+              },
+              {
+                "name": "Assignment 2",
+                "weighting": 1.0,
+                "grade": 0.0
+              },
+              {
+                "name": "Assignment 3",
+                "weighting": 1.0,
+                "grade": 0.0
+              },
+              {
+                "name": "Exam",
+                "weighting": 7.0,
+                "grade": 0.0
+              }
+            ]
+          },
+          {
+            "name": "COMP37111 Advanced Computer Graphics",
+            "weighting": 1.0,
+            "gradedWork": [
+              {
+                "name": "Coursework",
+                "weighting": 1.0,
+                "grade": 0.0
+              },
+              {
+                "name": "Exam",
+                "weighting": 3.0,
+                "grade": 0.0
+              }
+            ]
+          },
+          {
+            "name": "COMP38411 Cryptography & Network Security",
+            "weighting": 1.0,
+            "gradedWork": [
+              {
+                "name": "Exam",
+                "weighting": 1.0,
+                "grade": 0.0
+              }
+            ]
+          },
+          {
+            "name": "COMP34120 AI and Games",
+            "weighting": 2.0,
+            "gradedWork": [
+              {
+                "name": "Exam",
+                "weighting": 4.0,
+                "grade": 0.0
+              },
+              {
+                "name": "Coursework 1st Semester",
+                "weighting": 3.0,
+                "grade": 0.0
+              },
+              {
+                "name": "Coursework 2nd Semester",
+                "weighting": 3.0,
+                "grade": 0.0
+              }
+            ]
+          },
+          {
+            "name": "COMP36512 Compilers",
+            "weighting": 1.0,
+            "gradedWork": [
+              {
+                "name": "Exam",
+                "weighting": 1.0,
+                "grade": 0.0
+              }
+            ]
+          },
+          {
+            "name": "COMP37212 Computer Vision",
+            "weighting": 1.0,
+            "gradedWork": [
+              {
+                "name": "Exam",
+                "weighting": 9.0,
+                "grade": 0.0
+              },
+              {
+                "name": "Coursework",
+                "weighting": 1.0,
+                "grade": 0.0
+              }
+            ]
+          },
+          {
+            "name": "UCIL20282 The Information Age",
+            "weighting": 1.0,
+            "gradedWork": [
+              {
+                "name": "Exam",
+                "weighting": 1.0,
+                "grade": 0.0
+              },
+              {
+                "name": "Essay",
+                "weighting": 1.0,
+                "grade": 0.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+
+  }
+}

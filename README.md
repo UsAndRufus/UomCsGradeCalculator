@@ -1,5 +1,5 @@
 # UomCsGradeCalculator
-Grade calculator application for University of Manchester Computer Science students
+Grade calculator application, originally designed for University of Manchester Computer Science students, but should work with any grade system that has years, modules, and coursework.
 
 # Requirements
 * Java 8

@@ -12,22 +12,18 @@ public class FinalGrade implements Gradable {
 
     @Override
     public double getGrade() {
-        return Arrays.stream(completedYears)
-                .mapToDouble(Year::getWeightedGrade)
-                .sum() +
-                Arrays.stream(uncompletedYears)
-                        .mapToDouble(Year::getWeightedGrade)
-                        .sum();
+        double totalWeighting = GradeCalculator.getTotalWeightingFor(Arrays.asList(completedYears)) +
+                                GradeCalculator.getTotalWeightingFor(Arrays.asList(uncompletedYears));
+
+        double totalGrade = GradeCalculator.getTotalGradeFor(Arrays.asList(completedYears)) +
+                            GradeCalculator.getTotalGradeFor(Arrays.asList(uncompletedYears));;
+
+        return totalGrade / totalWeighting;
     }
 
     @Override
     public double getWeighting() {
         return 1.0;
-    }
-
-    @Override
-    public double getWeightedGrade() {
-        return getWeighting() * getGrade();
     }
 
     public void print() {

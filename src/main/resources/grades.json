@@ -8,27 +8,27 @@
 	  },
 	  {
 		"name": "Second Year",
-		"grade": 0.71,
-		"weighting": 0.33
+		"grade": 1.0,
+		"weighting": 1.0
 	  }
 	],
 	"uncompletedYears": [
 	  {
 		"name": "Third Year",
-		"weighting": 0.67,
+		"weighting": 2.0,
 		"modules": [
           {
 			"name": "Defense Against The Dark Arts",
 			"weighting": 1.0,
 			"gradedWork": [
               {
-                "name": "Yer a wizard",
-                "weighting": 0.5,
+                "name": "Yer a wizard Harry",
+                "weighting": 1.0,
                 "grade": 1
               },
               {
                 "name": "A what?",
-                "weighting": 0.5,
+                "weighting": 1.0,
                 "grade": 0
               }
 			]

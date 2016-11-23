@@ -4,7 +4,7 @@ import grades.Gradable;
 
 public class Year implements Gradable{
 
-    private String name;
+    protected String name;
     private double grade;
     private double weighting;
 
@@ -23,12 +23,7 @@ public class Year implements Gradable{
     }
 
     @Override
-    public double getWeightedGrade() {
-        return getGrade() * getWeighting();
-    }
-
-    @Override
     public String toString() {
-        return name + ": " + getWeightedGrade();
+        return name + ": " + getGrade();
     }
 }

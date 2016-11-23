@@ -1,6 +1,7 @@
 package grades.modules;
 
 import grades.Gradable;
+import grades.GradeCalculator;
 
 import java.util.Arrays;
 
@@ -13,18 +14,12 @@ public class Module implements Gradable {
 
     @Override
     public double getGrade() {
-        return Arrays.stream(gradedWork)
-                .mapToDouble(GradedWork::getWeightedGrade)
-                .sum();
+
+        return GradeCalculator.getWeightedGradeFor(Arrays.asList(gradedWork));
     }
 
     @Override
     public double getWeighting() {
         return weighting;
-    }
-
-    @Override
-    public double getWeightedGrade() {
-        return getWeighting() * getGrade();
     }
 }

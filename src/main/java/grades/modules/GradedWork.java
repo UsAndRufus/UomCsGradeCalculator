@@ -17,9 +17,4 @@ public class GradedWork implements Gradable{
     public double getWeighting() {
         return weighting;
     }
-
-    @Override
-    public double getWeightedGrade() {
-        return getWeighting() * getGrade();
-    }
 }

@@ -1,5 +1,6 @@
 package grades.years;
 
+import grades.GradeCalculator;
 import grades.modules.Module;
 
 import java.util.Arrays;
@@ -10,9 +11,7 @@ public class UncompletedYear extends Year{
 
     @Override
     public double getGrade() {
-        return Arrays.stream(modules)
-                .mapToDouble(Module::getWeightedGrade)
-                .sum();
+        return GradeCalculator.getWeightedGradeFor(Arrays.asList(modules));
     }
 
 }

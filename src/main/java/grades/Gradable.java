@@ -4,5 +4,7 @@ public interface Gradable {
 
     double getGrade();
     double getWeighting();
-    double getWeightedGrade();
+    default double getWeightedGrade() {
+        return getWeighting() * getGrade();
+    }
 }

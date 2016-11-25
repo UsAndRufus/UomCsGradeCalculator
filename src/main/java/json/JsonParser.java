@@ -33,8 +33,8 @@ public class JsonParser {
         return Files.lines(path).collect(Collectors.joining());
     }
 
-    public FinalGrade getFinalGrade() {
-        return jsonWrapper.getFinalGrade();
+    public JsonWrapper getJsonWrapper() {
+        return jsonWrapper;
     }
 
 }

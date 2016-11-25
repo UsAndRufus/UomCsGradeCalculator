@@ -32,6 +32,6 @@ public class FinalGrade implements Gradable {
         Arrays.stream(uncompletedYears)
                 .forEach(System.out::println);
 
-        System.out.println("Final grade: " + getWeightedGrade());
+        System.out.println("Final weighted grade: " + getWeightedGrade());
     }
 }

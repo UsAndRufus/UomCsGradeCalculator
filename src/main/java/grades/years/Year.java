@@ -24,6 +24,6 @@ public class Year implements Gradable{
 
     @Override
     public String toString() {
-        return name + ": " + getGrade();
+        return name + " weighted grade: " + getGrade();
     }
 }

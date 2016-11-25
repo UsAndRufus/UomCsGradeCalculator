@@ -8,8 +8,8 @@ public class Main {
     public static void main(String[] args) {
         JsonParser jsonParser = new JsonParser(args[0]);
 
-        FinalGrade finalGrade = jsonParser.getFinalGrade();
+        Menu menu = new Menu(jsonParser.getJsonWrapper());
 
-        finalGrade.print();
+        menu.display();
     }
 }
